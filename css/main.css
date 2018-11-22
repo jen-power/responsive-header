@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 *, *::before, *::after {
@@ -23,6 +23,7 @@ body {
 
 header {
   background-color: #18294f;
+  color: #6c8fe0;
 }
 
 h1 {
@@ -38,13 +39,33 @@ a {
   color: #6c8fe0;
 }
 
-ul {
+nav ul {
   padding: 0;
   margin: 0;
 }
 
-li {
+nav li {
   list-style-type: none;
   font-size: 1.125rem;
-  padding: .5em .75em ;
+  padding: .5em .75em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    text-align: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav ul {
+    flex-wrap: nowrap;
+  }
 }
