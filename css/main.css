@@ -11,6 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font-family: Ubuntu, sans-serif;
+  font: normal 100%/1.3;
 }
 
 *, *::before, *::after {
@@ -52,6 +53,11 @@ nav li {
 
 @media only screen and (min-width: 25em) {
 
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -61,11 +67,40 @@ nav li {
     text-align: center;
     width: 50%;
   }
+
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
   nav ul {
     flex-wrap: nowrap;
   }
+
+  nav li {
+    width: 25%;
+    white-space: nowrap;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
